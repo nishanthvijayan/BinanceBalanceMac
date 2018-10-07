@@ -1,2 +1,4 @@
 # BinanceBalanceMac
-A BitBar plugin that should your Binance potfolio value in your Mac OS X Menu Bar
+A BitBar plugin that shows your Binance potfolio value in your Mac OS X Menu Bar
+
+![Screenshot](Screenshot.png)
