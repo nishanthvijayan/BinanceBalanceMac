@@ -1,6 +1,8 @@
 const Binance = require('binance-api-node').default;
 const { apiKey, apiSecret } = require('./secrets.json');
 
+const DIVIDER = '---';
+
 function calculateBTCBalance(balances, prices) {
   let totalBTCBalance = 0.0;
 
@@ -32,7 +34,9 @@ async function getBTCBalance() {
     prices = await client.prices({ recvWindow: 1000 });
   } catch (e) {
     console.log('...');
-    console.log(e.toString());
+    console.log(DIVIDER);
+    console.log('Error connecting to Binance');
+    console.log(e.message);
     return;
   }
 
