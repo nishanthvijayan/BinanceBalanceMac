@@ -48,4 +48,4 @@ async function getBTCBalance() {
   );
 }
 
-getBTCBalance()
+getBTCBalance();
